@@ -28,20 +28,3 @@ export const users: User[] = [
         "password": "67.76.188.26"
     }
 ]
-
-export const loginUser = (user: User) => {
-    const existingUser = users.find((u) => u.email === user.email && u.password === user.password)
-    if (!existingUser) {
-        users.push(user)
-    }
-}
-
-export const findUser = (id: string) => {
-    const
-}
-
-export const findUserByEmailPassword = (email: string, password: string) => {
-}
-
-export const deleteUser = (id: string) => {
-}
