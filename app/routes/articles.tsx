@@ -38,13 +38,15 @@ function Articles() {
         [change]);
 
     return (
-        <div>
+        <div className='bg-gray-400 p-10'>
             {loading && (
-                <div
-                    className="flex self-center justify-center motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-whiteinline-block  text-surface  dark:text-whiteinline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] dark:text-white">
+                <div className='w-full h-screen flex items-start justify-center '>
+                    <div
+                        className="motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-whiteinline-block dark:text-whiteinline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] dark:text-white">
+                    </div>
                 </div>
             )}
-            <div className="flex flex-wrap ">
+            <div className="flex flex-wrap gap-10 justify-center h-full">
                 {res?.map((item) => (
                     <div
                         key={item.id}
