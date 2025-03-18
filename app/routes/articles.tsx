@@ -25,15 +25,17 @@ function Articles() {
                     }
 
                     const data: Article[] = await response.json();
+
                     setRes(data);
+
+                    console.log(data)
                     toast.success("data successfully retrieved");
                     setLoading(false);
                 } catch (error) {
                     console.error("Error fetching data:", error);
                 }
             };
-
-            fetchData();
+            fetchData()
         },
         [change]);
 
